@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
 
         }
         td, th{
@@ -19,9 +20,23 @@
             padding: 10px;
 
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(41, 40, 40);
             color: white;
+        }
+        thead >tr >th {
+            position: sticky;
+            background-color: rgb(41, 40, 40);
+            top: -1px;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: lightgrey;
         }
         td.num{
             text-align: right;
@@ -33,6 +48,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD ,TH
             TBODY
@@ -42,9 +58,10 @@
 
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
 
         </thead>
         <tbody>
@@ -159,12 +176,21 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>185.289.926</strong></td>
             </tr>
 
         </tfoot>
     </table>
-    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nisi, voluptates quia sed vero quod, sint explicabo libero maxime iure cupiditate quidem soluta accusamus praesentium culpa voluptate omnis repudiandae a!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente aperiam reiciendis sit, amet nulla debitis consequuntur hic atque! Nesciunt impedit excepturi animi quam ipsa alias eveniet corrupti nobis minus distinctio?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus consequatur vero atque fuga exercitationem doloribus optio, totam hic tempora iusto quae tempore impedit, repellendus eaque nostrum, nisi magni sit repellat.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nisi, voluptates quia sed vero quod, sint explicabo libero maxime iure cupiditate quidem soluta accusamus praesentium culpa voluptate omnis repudiandae a!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente aperiam reiciendis sit, amet nulla debitis consequuntur hic atque! Nesciunt impedit excepturi animi quam ipsa alias eveniet corrupti nobis minus distinctio?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus consequatur vero atque fuga exercitationem doloribus optio, totam hic tempora iusto quae tempore impedit, repellendus eaque nostrum, nisi magni sit repellat.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nisi, voluptates quia sed vero quod, sint explicabo libero maxime iure cupiditate quidem soluta accusamus praesentium culpa voluptate omnis repudiandae a!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente aperiam reiciendis sit, amet nulla debitis consequuntur hic atque! Nesciunt impedit excepturi animi quam ipsa alias eveniet corrupti nobis minus distinctio?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus consequatur vero atque fuga exercitationem doloribus optio, totam hic tempora iusto quae tempore impedit, repellendus eaque nostrum, nisi magni sit repellat.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nisi, voluptates quia sed vero quod, sint explicabo libero maxime iure cupiditate quidem soluta accusamus praesentium culpa voluptate omnis repudiandae a!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente aperiam reiciendis sit, amet nulla debitis consequuntur hic atque! Nesciunt impedit excepturi animi quam ipsa alias eveniet corrupti nobis minus distinctio?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus consequatur vero atque fuga exercitationem doloribus optio, totam hic tempora iusto quae tempore impedit, repellendus eaque nostrum, nisi magni sit repellat.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nisi, voluptates quia sed vero quod, sint explicabo libero maxime iure cupiditate quidem soluta accusamus praesentium culpa voluptate omnis repudiandae a!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente aperiam reiciendis sit, amet nulla debitis consequuntur hic atque! Nesciunt impedit excepturi animi quam ipsa alias eveniet corrupti nobis minus distinctio?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus consequatur vero atque fuga exercitationem doloribus optio, totam hic tempora iusto quae tempore impedit, repellendus eaque nostrum, nisi magni sit repellat.
+    </p>
 </body>
 </html>
