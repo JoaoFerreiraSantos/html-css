@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação de login em HTML</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        .load{
+            border: 16px solid rgba(185, 183, 183, 0.363);
+            border-radius: 50%;
+            border-top: 16px solid rgb(0, 0, 0);
+            width: 120px;
+            height: 120px;
+            animation: rotate 2s linear infinite;
+            margin: auto;
+
+        }
+        @keyframes rotate{
+            0%{transform:rotate(0deg);}
+            100%{transform:rotate(360deg)}
+        }
+        h1, h2{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: rgb(236, 234, 234);
+        }
+    </style>
+</head>
+<body>
+    <h1>Aguarde enquanto carregamos o conteúdo</h1>
+    <div class="load"></div>
+    <h2>Isso pode demorar alguns minutos...</h2>
+    
+</body>
+</html>
